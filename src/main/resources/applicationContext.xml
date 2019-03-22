@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="bookService" class="com.zy.demo.BookService">
+        <property name="name" value="Yiibai" />
+        <property name="age" value="12" />
+    </bean>
+    <bean id="bookService1" class="com.zy.demo.BookService">
+        <constructor-arg name="name" value="libai" />
+        <constructor-arg name="age" value="19"/>
+    </bean>
+
+   <bean id="collections" class="com.zy.demo.Customer" >
+
+        <property name="list">
+            <list>
+                <value>one</value>
+                <value>two</value>
+                <value>three</value>
+            </list>
+        </property>
+
+        <property name="set">
+            <set>
+                <value>一</value>
+                <value>二</value>
+                <value>三</value>
+                <value>一</value>
+            </set>
+        </property>
+
+        <property name="map">
+            <map>
+                <entry key="1" value="Microsoft"></entry>
+                <entry key="2" value="Google"></entry>
+                <entry key="3" value="Apple"></entry>
+            </map>
+        </property>
+
+    </bean>
+
+     
+
+</beans>
